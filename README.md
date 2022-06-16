@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://audiosupp.github.io/rsschool-cv/c
+https://audiosupp.github.io/rsschool-cv/cv
