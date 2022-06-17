@@ -11,36 +11,135 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="highlight/styles/default.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>CV Ivan Gerasimyuk</title>
   </head>
   <body>
     <header>
-      <h1>Gerasimyuk Ivan</h1>
-      <img src="images/45661430.png" alt="profile picture" />
-      <h2>Front End Developer</h2>
+      <div class="headerLeftSide">
+        <img src="images/45661430.png" alt="profile picture" />
+        <div>
+          <h1>Gerasimyuk Ivan</h1>
+          <h2>Front End Developer</h2>
+        </div>
+      </div>
       <nav>
-        <a href="">About me</a>
-        <a href="">Bottom</a>
+        <ul>
+          <li><a href="#main">About me</a></li>
+          <li><a href="#footer">Bottom</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <div>
+    <main id="main">
+      <div class="twoColumnSection">
         <aside class="asideLeft">
-          <h3>About Me</h3>
-          <h3>Contact information:</h3>
-          <h3>Skills</h3>
+          <section>
+            <h2>About me</h2>
+            <p>
+              I’m learn to be developer
+              <em>(at the moment to be junior front end)</em>.
+              <br />
+              <br />
+              For many years I have keen to technologies and was reading from
+              time to time news about what new happened in IT field, discussing
+              this with my friends who have similar interest or working as
+              developers. I recently decided to dedicate myself entirely to the
+              course and learn how to program.
+              <br />
+              <br />
+              My main interest lies in creative outlet of development: making
+              new tools of expression for people; working with sound and
+              visuals; making websites.
+              <em
+                >(but also, I still thinks about backend dev. and to be a “full
+                stack”. I want to find company that making their own product. I
+                want to have not a narrower role, but a wide range of tasks.)
+              </em>
+            </p>
+          </section>
+          <section>
+            <h2>Contact information:</h2>
+            <p>audiosupp@gmail.com</p>
+            <a href="https://t.me/TakamineBlack">telegram</a>
+          </section>
+          <section>
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML / CSS</li>
+              <li>Javascript</li>
+              <li>Processing / p5js</li>
+              <li>Git / Github</li>
+            </ul>
+          </section>
         </aside>
         <aside class="asdieRight">
-          <h3>Code Example</h3>
-          <h3>Experience</h3>
-          <h3>Courses</h3>
-          <h3>Languages</h3>
+          <section>
+            <h2>Code Example</h2>
+            <p>Implementation of random color</p>
+            <pre>
+            <code>
+function colorSquare() { 
+    if (click) { if (color === "random") {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; 
+    } else { this.style.backgroundColor = color; } 
+} 
+</code
+            >
+            </pre>
+          </section>
+          <section>
+            <h2>Experience</h2>
+            <a href="https://github.com/audiosupp/ETCH-A-SKETCH"
+              >ETCH-A-SKETCH</a
+            >
+            <p>Made with html/css/js</p>
+          </section>
+          <section>
+            <h2>Courses</h2>
+            <a href="https://www.theodinproject.com/">TOP</a
+            ><small>in progress</small>
+            <br />
+            <br />
+            <a href="https://rs.school/">RS.school</a><small>in progress</small>
+          </section>
+          <section class="languages">
+            <h2>Languages</h2>
+            <p>
+              English - C1 ADVANCED to C2 PROFICIENT
+              <small
+                >(according to the online test at
+                <a href="https://audiosupp.github.io/rsschool-cv/www.efset.org"
+                  >EFset</a
+                >)</small
+              >
+            </p>
+            <img src="images/lvlEnglish.png" alt="lvl of english efset" />
+            <br />
+            <p>Russian - Native</p>
+          </section>
         </aside>
       </div>
     </main>
-    <footer>
-      <img src="images/rsschool.jpg" alt="rs school logo" />
+    <footer id="footer">
+      <a href="https://github.com/audiosupp"
+        ><img src="images/github_logo.png" alt="github logo" />
+        <h4>My Github</h4></a
+      >
+      <p>2022</p>
+      <a href="https://rs.school/js-stage0/"
+        ><img src="images/rs_school_js.svg" alt="rs school logo"
+      /></a>
     </footer>
   </body>
+  <script src="highlight/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>
